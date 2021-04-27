@@ -16,7 +16,9 @@ Using the above cookiecutter template, please provide the following:
 - A store owner can have more than one store but the API endpoint should be able to show data of sales from each store on GET request from each days sales.
 - A store attendant can only see data from the store they are assigned to
 - The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
+
   ![alt text](https://github.com/Abilene-Paradox/ddd_assessment/blob/main/store_template.png)
+  
 - The store attendant can make changes to the uploaded data
 - A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
 - A store owner can make a comment on the days sales
