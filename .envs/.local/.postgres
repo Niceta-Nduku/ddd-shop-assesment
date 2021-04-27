@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=ddd_shop
+POSTGRES_USER=TgJuOmRuTsiFglARtonDQydtvmHhzhFh
+POSTGRES_PASSWORD=AJfig6YAExGZAk0kR9mYTakPwRM9hOT0WR3pYIxreOC6rHannhG8MEtkMzBCnx7A

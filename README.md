@@ -10,22 +10,22 @@ IMPORTANT: Kindly clone the repo and use a different branch from master to submi
 ## SCENARIO
 
 Using the above cookiecutter template, please provide the following:
-    Custom user system and include permissions. The various users to the system are as follows: Admin, Store Owner and Store Attendant.
-    The Admin should be able to view data from all stores
-    A store owner can have more than one store but the API endpoint should be able to show data of sales from each store on GET request from each days sales.
-    A store attendant can only see data from the store they are assigned to
-    The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
+    - Custom user system and include permissions. The various users to the system are as follows: Admin, Store Owner and Store Attendant.
+    - The Admin should be able to view data from all stores
+    - A store owner can have more than one store but the API endpoint should be able to show data of sales from each store on GET request from each days sales.
+    - A store attendant can only see data from the store they are assigned to
+    - The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
         ![alt text](https://github.com/Abilene-Paradox/ddd_assessment/store_template.png?raw=true)
-    The store attendant can make changes to the uploaded data
-    A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
-    A store owner can make a comment on the days sales
-    An end point showing total sales of each item provided in the template per store only to the store owner
+    - The store attendant can make changes to the uploaded data
+    - A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
+    - A store owner can make a comment on the days sales
+    - An end point showing total sales of each item provided in the template per store only to the store owner
 
-The uploaded files are not processed in real time to allow corrections to be made in case of an error in the upload file.
-All files from all stores in the system are processed at the same time every day, let's assume its Kenya and all stores are closed by 1900Hrs and the processing happens at 2000Hrs
-Once processed the files are moved into an archive directory
-The system should also be able to check for file extensions to ensure only the right file extenssions can be uploaded
-Assume that all the data endpoints from each store (and for string of store i.e stores that are owned by a single store owner) should produce a graph on the front-end of the system.
+- The uploaded files are not processed in real time to allow corrections to be made in case of an error in the upload file.
+- All files from all stores in the system are processed at the same time every day, let's assume its Kenya and all stores are closed by 1900Hrs and the processing happens at 2000Hrs
+- Once processed the files are moved into an archive directory
+- The system should also be able to check for file extensions to ensure only the right file extenssions can be uploaded
+- Assume that all the data endpoints from each store (and for string of store i.e stores that are owned by a single store owner) should produce a graph on the front-end of the system.
 
 You can be as minimal as possible or detailed as possible, for any path chosen please comment your code.
 We will be looking at clever ways by which the code is done and not necessarily code correcteness, we are looking at your problem solving skills.
