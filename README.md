@@ -1,5 +1,4 @@
-ddd\_shop
-=========
+# ddd_shop
 
 The assessment is to build a virtual shop monitoring system:
 
@@ -10,16 +9,18 @@ IMPORTANT: Kindly clone the repo and use a different branch from master to submi
 ## SCENARIO
 
 Using the above cookiecutter template, please provide the following:
-    - Custom user system and include permissions. The various users to the system are as follows: Admin, Store Owner and Store Attendant.
-    - The Admin should be able to view data from all stores
-    - A store owner can have more than one store but the API endpoint should be able to show data of sales from each store on GET request from each days sales.
-    - A store attendant can only see data from the store they are assigned to
-    - The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
-        ![alt text](https://github.com/Abilene-Paradox/ddd_assessment/store_template.png?raw=true)
-    - The store attendant can make changes to the uploaded data
-    - A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
-    - A store owner can make a comment on the days sales
-    - An end point showing total sales of each item provided in the template per store only to the store owner
+
+- Custom user system and include permissions. The various users to the system are as follows: Admin, Store Owner and Store Attendant.
+
+- The Admin should be able to view data from all stores
+- A store owner can have more than one store but the API endpoint should be able to show data of sales from each store on GET request from each days sales.
+- A store attendant can only see data from the store they are assigned to
+- The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
+  ![alt text](https://github.com/Abilene-Paradox/ddd_assessment/store_template.png)
+- The store attendant can make changes to the uploaded data
+- A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
+- A store owner can make a comment on the days sales
+- An end point showing total sales of each item provided in the template per store only to the store owner
 
 - The uploaded files are not processed in real time to allow corrections to be made in case of an error in the upload file.
 - All files from all stores in the system are processed at the same time every day, let's assume its Kenya and all stores are closed by 1900Hrs and the processing happens at 2000Hrs
@@ -37,27 +38,25 @@ BEST OF LUCK.
 ![image](https://img.shields.io/badge/code%20style-black-000000.svg%0A%20%20:target:%20https://github.com/ambv/black%0A%20%20:alt:%20Black%20code%20style)
 
 License
-:   MIT
+: MIT
 
-Settings
---------
+## Settings
 
 Moved to
 [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings.html).
 
-Basic Commands
---------------
+## Basic Commands
 
 ### Setting Up Your Users
 
--   To create a **normal user account**, just go to Sign Up and fill out
-    the form. Once you submit it, you'll see a "Verify Your E-mail
-    Address" page. Go to your console to see a simulated email
-    verification message. Copy the link into your browser. Now the
-    user's email should be verified and ready to go.
--   To create an **superuser account**, use this command:
+- To create a **normal user account**, just go to Sign Up and fill out
+  the form. Once you submit it, you'll see a "Verify Your E-mail
+  Address" page. Go to your console to see a simulated email
+  verification message. Copy the link into your browser. Now the
+  user's email should be verified and ready to go.
+- To create an **superuser account**, use this command:
 
-        $ python manage.py createsuperuser
+      $ python manage.py createsuperuser
 
 For convenience, you can keep your normal user logged in on Chrome and
 your superuser logged in on Firefox (or similar), so that you can see
@@ -93,17 +92,16 @@ This app comes with Celery.
 
 To run a celery worker:
 
-``` {.sourceCode .bash}
+```{.sourceCode .bash}
 cd ddd_shop
 celery -A config.celery_app worker -l info
 ```
 
-Please note: For Celery's import magic to work, it is important *where*
+Please note: For Celery's import magic to work, it is important _where_
 the celery commands are run. If you are in the same folder with
-*manage.py*, you should be right.
+_manage.py_, you should be right.
 
-Deployment
-----------
+## Deployment
 
 The following details how to deploy this application.
 
