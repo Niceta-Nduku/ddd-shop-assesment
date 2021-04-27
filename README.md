@@ -24,14 +24,17 @@ Using the above cookiecutter template, please provide the following:
 - A store owner can make a comment on the days sales
 - An end point showing total sales of each item provided in the template per store only to the store owner
 
+In addtition:
+
 - The uploaded files are not processed in real time to allow corrections to be made in case of an error in the upload file.
-- All files from all stores in the system are processed at the same time every day, let's assume its Kenya and all stores are closed by 1900Hrs and the processing happens at 2000Hrs
-- Once processed the files are moved into an archive directory
+- All files from all stores in the system are processed at the same time every day, let's assume its Kenya and all stores are closed by 1900Hrs and the processing happens at 2000Hrs, the process should be able to capture failures and re-run them.
+- Once processed the files are moved into an archive directory but should be available to the store owner for download
 - The system should also be able to check for file extensions to ensure only the right file extenssions can be uploaded
-- Assume that all the data endpoints from each store (and for string of store i.e stores that are owned by a single store owner) should produce a graph on the front-end of the system.
 
 You can be as minimal as possible or detailed as possible, for any path chosen please comment your code.
 We are looking at your problem solving skills and how well you can articulate your thought process.
+
+If anything is unclear please feel free to reach out to us and we shall get back to you as soon as possible.
 
 BEST OF LUCK.
 
