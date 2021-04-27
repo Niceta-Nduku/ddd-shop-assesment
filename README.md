@@ -18,7 +18,7 @@ Using the above cookiecutter template, please provide the following:
 - The store attendant can upload data of sales for the day using a CSV or xlsx file (use provided template below) and the data stored in a database:
 
   ![alt text](https://github.com/Abilene-Paradox/ddd_assessment/blob/main/store_template.png)
-  
+
 - The store attendant can make changes to the uploaded data
 - A store can have multiple attendants and the uploaded data should show the name of the attendant who uploads the file (above)
 - A store owner can make a comment on the days sales
@@ -31,13 +31,9 @@ Using the above cookiecutter template, please provide the following:
 - Assume that all the data endpoints from each store (and for string of store i.e stores that are owned by a single store owner) should produce a graph on the front-end of the system.
 
 You can be as minimal as possible or detailed as possible, for any path chosen please comment your code.
-We will be looking at clever ways by which the code is done and not necessarily code correcteness, we are looking at your problem solving skills.
+We are looking at your problem solving skills and how well you can articulate your thought process.
 
 BEST OF LUCK.
-
-![image](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter%0A%20%20:target:%20https://github.com/pydanny/cookiecutter-django/%0A%20%20:alt:%20Built%20with%20Cookiecutter%20Django)
-
-![image](https://img.shields.io/badge/code%20style-black-000000.svg%0A%20%20:target:%20https://github.com/ambv/black%0A%20%20:alt:%20Black%20code%20style)
 
 License
 : MIT
