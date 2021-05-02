@@ -8,6 +8,6 @@ class UsersConfig(AppConfig):
 
     def ready(self):
         try:
-            import ddd_shop.users.signals  # noqa F401
+            import ddd_shop.users.sipgnals  # noqa F401
         except ImportError:
             pass

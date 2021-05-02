@@ -29,6 +29,16 @@
 </div>
 <!-- End Action buttons -->
 {% endif %}
-
 </div>
+{% if object == request.user.is_attendant %}
+<div>
+  <a class="btn btn-primary" role="button">Upload Sale File</a>
+</div>
+{% endif %}
+
+{% if object == request.user.is_owner %}
+<div>
+  <h3> Stores</h3>
+</div>
+{% endif %}
 {% endblock content %}

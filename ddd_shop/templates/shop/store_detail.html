@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{ load static }
+
+{% block title %}Store: {{ object.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h2>{{ object.name }}</h2>
+        <p>{{ object.location }}</p>
+    </div>
+  </div>
+
+{% if object == request.store %}
+<!-- Action buttons -->
+<div class="row">
+
+  <div class="col-sm-12">
+    <a class="btn btn-primary" role="button">Upload Sale File</a>
+    <!-- Your Stuff: Custom user template urls -->
+  </div>
+
+</div>
+<!-- End Action buttons -->
+{% endif %}
+
+</div>
+{% endblock content %}

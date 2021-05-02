@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title}{{shop.name}}{%endblock}
+
+{% block content %}
+    <h1>Sales Upload</h1>
+    <form method="POST" class="form-horizontal",action ="{%url 'shop:upload_sale' %}">
+    {% csrf_token %}
+    {{form|crispy}}
+    <div class="control-group">
+        <div class="controls">
+        <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+    </div>
+    </form>
+{%  content %}

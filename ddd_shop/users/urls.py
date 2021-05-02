@@ -1,10 +1,6 @@
 from django.urls import path
 
-from ddd_shop.users.views import (
-    user_detail_view,
-    user_redirect_view,
-    user_update_view,
-)
+from ddd_shop.users.views import *
 
 app_name = "users"
 urlpatterns = [
