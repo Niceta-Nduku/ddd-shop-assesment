@@ -1,25 +1,22 @@
 <h2>DDD Stores</h2>
 
-<table class="table table-bordered">
-    <thead>
+<table>
       <tr>
-        <th></th>
         <th>Name</th>
         <th>Location</th>
         <!-- <th>Owner</th>
         <th>Attendats</th> -->
       </tr>
-    </thead>
-    <tbody>
+    <tr>
         {% for store in object_list %}
         <tr>
-          <td>{{ sale.Name }}</td>
-          <td>{{ sale.Location }}</td>
+          <td>{{ store.name }}</td>
+          <td>{{ store.location }}</td>
         </tr>
       {% empty %}
         <tr>
           <td colspan="5">No data</td>
         </tr>
       {% endfor %}
-    </tbody>
+      </tr>
   </table>

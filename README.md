@@ -35,10 +35,6 @@ This is where I had a major challenge and spent time to understand the framework
 * [Sales Views](ddd_shop/sales/views.py)
 
 
-## Step 4: Templates and URLs
-
-This step was done in conjunction with the previous step.
-
 ## Step 5: Tasks
 
 Unfortunately, I did not get to this step before the submission deadline 
