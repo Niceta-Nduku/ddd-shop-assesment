@@ -16,7 +16,7 @@ I also drew up a diagram showing how the upload process would work.
 The first implementation step I took was to create the models.
 I later saw that it was better to create applications for a store and sales
 
-* [User model][ddd_shop/users/models.py]
+* [User model][./ddd_shop/users/models.py]
 * [Store model][ddd_shop/store/models.py]
 * [sales][ddd_shop/sales/models.py]
 
