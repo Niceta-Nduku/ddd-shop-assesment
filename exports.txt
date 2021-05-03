@@ -1,0 +1,5 @@
+source ddd_venv/bin/activate
+export DATABASE_URL=postgres://postgres:0fTh3V@lley@127.0.0.1:5433/ddd_shop
+export USE_DOCKER=yes
+export CELERY_BROKER_URL=redis://localhost:6379/0
+python manage.py.migrate

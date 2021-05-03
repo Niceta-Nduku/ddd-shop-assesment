@@ -32,7 +32,7 @@ class StoreOwnerAdmin(admin.ModelAdmin):
 
 class StoreAttendantAdmin(admin.ModelAdmin):
     model = StoreAttendant()
-    list_display = ["user","shop"]
+    list_display = ["user","store"]
 
 
 admin.site.register(User, UserAdmin)

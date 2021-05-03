@@ -18,6 +18,7 @@ urlpatterns = [
     path("users/", include("ddd_shop.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("store/",include("ddd_shop.store.urls", namespace="store")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
     # Static file serving when using Gunicorn + Uvicorn for local web socket development

@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser, Group
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
-from ddd_shop.shop.models import Store
+from ddd_shop.store.models import Store
 
 
 class User(AbstractUser):
@@ -43,4 +43,4 @@ class StoreOwner(models.Model):
 class StoreAttendant(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    shop = models.ForeignKey(to=Store, on_delete=models.DO_NOTHING)
+    store = models.ForeignKey(to=Store, on_delete=models.DO_NOTHING)

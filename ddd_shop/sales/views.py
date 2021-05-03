@@ -12,12 +12,11 @@ User = get_user_model()
 
 class SaleUploadView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, FormView):
 
-    template_name = "templates/shop/salesUpload.html"
+    template_name = "templates/store/salesUpload.html"
     success_message = _("Sale uploaded")
     form_class = None  # in
     wrong_file_format = "Please upload a .csv or .xlsx file"
-    # success_url = reverse()  # return to store view
-    
+    # success_url = # return to store view
 
     def post(self, request, *args, **kwargs):
 
@@ -36,7 +35,6 @@ class SaleUploadView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
 class SaleUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, UpdateView):
     """ 
     View to modify sale file
-
     """
     success_message = _("Sale modified")
     model = SaleFile
@@ -45,27 +43,38 @@ class SaleUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
         return self.request.salefile
 
 
-def storeSales(request):
-    pass
-
-
-def totalItemSale(request):
-    pass
-
-
-def showArchivedFiles():
-    pass
-
-
-def makeComment():
+class showArchivedFiles(LoginRequiredMixin):
     """
-    Sale comment
+    View for opening archived files
     """
+    #access only for store owner and admin
     pass
 
 
-def allSalesView():
+class CommentView(LoginRequiredMixin, DetailView):
+    """
+    View for making a comment on a sale
+    """
+    # acess for store owner only
+    pass
+
+
+class allSalesView(LoginRequiredMixin):
     """
     View to see all sales in a store
     """
     pass
+
+
+class salesDetailView(LoginRequiredMixin, DetailView):
+    """
+    View for a sale item 
+    """
+    # view to looking at a single sale item filter
+    pass
+
+class totalSaleView(LoginRequiredMixin, DetailView):
+    """
+    View for the total sale of an item
+    """
+

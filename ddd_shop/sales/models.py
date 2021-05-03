@@ -1,6 +1,6 @@
 from django.db import models
 from ddd_shop.users.models import StoreAttendant
-from ddd_shop.shop.models import Store
+from ddd_shop.store.models import Store
 
 class StoreItem(models.Model):
 

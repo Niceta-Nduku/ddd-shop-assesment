@@ -37,12 +37,15 @@ class storeAttendantsView(LoginRequiredMixin,ListView):
     """
     View to List of all attendants in a store
     """
+
     model = StoreAttendant
     # TODO filter by current store
     # def get_queryset(self):
     #     pass
 
-# @method_decorator(owner_only)
+    # access only for admin and store owner
+
+
 class storeListView(LoginRequiredMixin,ListView):
     """
     View to see all stores
@@ -50,6 +53,8 @@ class storeListView(LoginRequiredMixin,ListView):
     model = Store
     def test_func(self):
         return not self.request.user.is_attendant
+
+    #access only for admin
 
 
 class storesListOwnerView(LoginRequiredMixin,ListView):
@@ -60,3 +65,5 @@ class storesListOwnerView(LoginRequiredMixin,ListView):
 
     def test_func(self):
         return not self.request.user.is_attendant
+
+    #access for owner only

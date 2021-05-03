@@ -72,11 +72,13 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "corsheaders",
+    "django_filters",
 ]
 
 LOCAL_APPS = [
     "ddd_shop.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "ddd_shop.store.apps.ShopConfig",
+    "ddd_shop.sales.apps.SalesConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
