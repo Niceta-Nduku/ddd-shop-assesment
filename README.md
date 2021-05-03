@@ -16,17 +16,16 @@ I also drew up a diagram showing how the upload process would work.
 The first implementation step I took was to create the models.
 I later saw that it was better to create applications for a store and sales
 
-* [User model][./ddd_shop/users/models.py]
-* [Store model][ddd_shop/store/models.py]
-* [sales][ddd_shop/sales/models.py]
-
+* [User model](ddd_shop/users/models.py)
+* [Store model](ddd_shop/store/models.py)
+* [sales](ddd_shop/sales/models.py)
 ## Step 3: Views and Permissions
 
 My next step was to work on the views. 
 This is where I had a major challenge and spent time to understand the framework.
 
-* [Store Views][]
-* [Sales Views][]
+* [Store Views](ddd_shop/store/views.py)
+* [Sales Views](ddd_shop/sales/views.py)
 
 ## Step 4: Templates and URLs
 
